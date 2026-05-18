@@ -1,128 +1,217 @@
-# Customer-Behaviour-Dashboard
-Overview
+# Customer Behavior Data Analytics Project
 
-This project focuses on performing end-to-end data analytics using Python, SQL, and Power BI. The workflow includes data loading, exploratory data analysis (EDA), data cleaning, SQL-based analysis, dashboard creation, and reporting. The project is designed to demonstrate practical analytics skills used in real-world business environments.
+## 📌 Overview
+This project demonstrates an end-to-end Data Analytics workflow using Python, SQL, and Power BI. The analysis focuses on customer purchasing behavior, subscription trends, discounts, and product performance.
 
-Dataset
+The project includes:
+- Data Loading & Cleaning
+- Exploratory Data Analysis (EDA)
+- SQL Query Analysis
+- Dashboard Creation in Power BI
+- Report Generation
+- Presentation Preparation using Gamma
 
-The dataset contains customer shopping and purchasing information used for analyzing customer behavior, purchasing trends, discounts, subscriptions, and sales patterns.
+---
 
-Key Features
-Customer ID
-Age
-Gender
-Category
-Item Purchased
-Purchase Amount
-Subscription Status
-Discount Applied
-Previous Purchases
-Payment Method
-Shipping Type
-Tools & Technologies Used
-Programming & Analysis
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Database
-PostgreSQL / MySQL / SQL Server
-pgAdmin
-Visualization
-Power BI
-Documentation & Presentation
-Microsoft Word / PDF Report
-Gamma PPT
-Project Workflow
-1. Data Loading
-Imported dataset using Pandas
-Verified structure and data types
-2. Exploratory Data Analysis (EDA)
-Checked null values
-Identified duplicate records
-Analyzed customer trends
-Visualized category-wise sales and purchases
-3. Data Cleaning
-Removed inconsistencies
-Handled missing values
-Corrected data formatting issues
-4. SQL Analysis
+# 📂 Dataset Information
 
-Performed SQL queries for:
+The dataset contains customer shopping and purchasing details used for business analysis.
 
-Top purchased products
-Customer segmentation
-Repeat buyers analysis
-Discount analysis
-Subscription insights
-Category-wise performance
-5. Dashboard Creation
+## Features Included
+- Customer ID
+- Age
+- Gender
+- Item Purchased
+- Category
+- Purchase Amount
+- Subscription Status
+- Discount Applied
+- Previous Purchases
+- Payment Method
+- Shipping Type
+- Review Rating
 
-Created an interactive Power BI dashboard with:
+---
 
-KPIs
-Sales trends
-Customer insights
-Category analysis
-Subscription and discount visuals
-6. Reporting
+# 🛠️ Tools & Technologies Used
 
-Prepared a project report summarizing:
+## Programming
+- Python
+- Pandas
+- NumPy
 
-Objectives
-Methodology
-Analysis
-Insights
-Conclusion
-7. Presentation
+## Data Visualization
+- Matplotlib
+- Seaborn
+- Power BI
 
-Created a professional presentation using Gamma for project explanation and demonstration.
+## Database
+- PostgreSQL
+- pgAdmin
 
-Dashboard Features
-Interactive filters
-Sales overview
-Customer segmentation
-Product performance
-Subscription analysis
-Discount impact analysis
-Results & Insights
-Identified top-selling product categories
-Analyzed customer purchase behavior
-Found patterns in discount usage
-Compared subscription vs non-subscription customers
-Generated actionable business insights
+## Presentation & Reporting
+- Gamma
+- MS Word / PDF
 
-How to Run the Project
+---
 
-Step 1: Install Required Libraries
-pip install pandas numpy matplotlib seaborn sqlalchemy psycopg2
-Step 2: Run Python Files
-python analysis.py
+# 📊 Project Workflow
 
-Step 3: Connect SQL Database
-Open pgAdmin / MySQL Workbench / SQL Server
-Create database
-Import dataset
-Run SQL queries
+## 1️⃣ Data Loading
+- Imported dataset using Pandas
+- Verified rows, columns, and data types
 
-Step 4: Open Power BI Dashboard
-Open .pbix file in Power BI Desktop
-Project Structure
-project/
+## 2️⃣ Data Cleaning
+- Removed duplicates
+- Checked missing values
+- Corrected inconsistent data
+
+## 3️⃣ Exploratory Data Analysis (EDA)
+Performed:
+- Category-wise analysis
+- Gender analysis
+- Purchase trend analysis
+- Subscription analysis
+- Discount analysis
+
+## 4️⃣ SQL Analysis
+Executed SQL queries for:
+- Top purchased items
+- Repeat buyers
+- Customer segmentation
+- Discount percentage analysis
+- Subscription insights
+
+## 5️⃣ Power BI Dashboard
+Created an interactive dashboard including:
+- KPI cards
+- Sales trends
+- Customer insights
+- Category analysis
+- Filters and slicers
+
+## 6️⃣ Report & Presentation
+- Generated project report
+- Created presentation using Gamma
+
+---
+
+# 📈 Dashboard Features
+
+- Total Sales Overview
+- Top Selling Products
+- Customer Segmentation
+- Discount Analysis
+- Subscription Insights
+- Purchase Trends
+
+---
+
+# 📁 Project Structure
+
+```bash
+Customer-Behavior-Analytics/
 │
 ├── dataset/
+│   └── customer_data.csv
+│
 ├── python_scripts/
+│   ├── data_cleaning.py
+│   ├── eda_analysis.py
+│   └── visualization.py
+│
 ├── sql_queries/
+│   └── analysis_queries.sql
+│
 ├── dashboard/
+│   └── customer_dashboard.pbix
+│
 ├── report/
+│   └── project_report.pdf
+│
 ├── presentation/
+│   └── gamma_presentation.pptx
+│
 └── README.md
-Conclusion
+```
 
-This project demonstrates the complete workflow of a data analytics project, including data preprocessing, SQL analysis, visualization, dashboarding, and reporting. It highlights practical skills in Python, SQL, Power BI, and business analytics.
+---
 
-Author
+# ▶️ How to Run the Project
 
-Jeevith K
+## Step 1: Install Required Libraries
 
+```bash
+pip install pandas numpy matplotlib seaborn sqlalchemy psycopg2
+```
+
+---
+
+## Step 2: Run Python Files
+
+```bash
+python data_cleaning.py
+python eda_analysis.py
+```
+
+---
+
+## Step 3: Connect PostgreSQL
+
+Update your database credentials:
+
+```python
+username = "postgres"
+password = "your_password"
+host = "localhost"
+port = "5432"
+database = "customer_behaviour"
+```
+
+---
+
+## Step 4: Run SQL Queries
+Open pgAdmin and execute queries from:
+
+```bash
+sql_queries/analysis_queries.sql
+```
+
+---
+
+## Step 5: Open Power BI Dashboard
+Open:
+
+```bash
+customer_dashboard.pbix
+```
+
+using Power BI Desktop.
+
+---
+
+# 📌 Key Insights
+
+- Identified top-selling product categories
+- Analyzed repeat customer behavior
+- Measured impact of discounts on purchases
+- Compared subscription vs non-subscription customers
+- Generated business recommendations from data
+
+---
+
+# 🚀 Future Improvements
+
+- Add Machine Learning predictions
+- Deploy dashboard online
+- Automate reporting pipeline
+- Add real-time analytics support
+
+---
+
+# 👨‍💻 Author
+
+## Jeevith K
+Data Science Engineering Student
+
+---
